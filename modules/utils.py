@@ -100,5 +100,5 @@ def linear(x, m, b):
     return m*x + b
 
 # exponential function
-def exponential(x, a, b, c):
-    return a*np.exp(-b*x) + c
+def exponential(t, tau, A):
+    return A*np.exp(-t/tau)
